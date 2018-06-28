@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+/*html { font-size: 62.5%; }  !* =10px *!*/
+html{
+    font-size: 16px;
+}
+header{
+    width: 100vw;
+    height:33.98vh;
+    background: white;
+}
+.header_nav{
+    height: 8.54vh;
+    width: 100vw;
+}
+.h_left{
+    float: left;
+    width:15.62vw ;
+    height:8.8vh ;
+}
+.h_left img {
+    margin-top:3.61vh;
+    margin-left:5.94vw;
+    width: 2.5vw;
+    height:2.29vh;
+}
+.h_right{
+    float: right;
+    width:15.62vw ;
+    height:8.8vh ;
+}
+.h_mid{
+    float: left;
+    width:65vw;
+    height: 7.3vh;
+}
+.hr_p1{
+    /*float: left;*/
+    font-size: 2.6rem;
+    color: #ccc;
+    margin-top: 3.52vh;
+    margin-left: 25.3vw;
+    color:#88d549;
+    display: inline-block;
+    /*margin-right: 36.7vw;*/
+}
+
+.h_right img{
+    width: 4.69vw;
+    height: 2.64vh;
+    float: right;
+    margin-right: 6.72vw;
+    margin-top: 3.61vh;
+}
+.hr_img1{
+
+    float: left;
+}
+.hr_img2{
+    width: 2.66vw;
+    height: 1.76vh;
+    float: right;
+    margin-top: 4vh;
+    margin-right: 0.88vw;
+}
+.hm_div1{
+    width:0.13vw;
+    height: 0.44vh;
+    background: black;
+}
+.hm_div2{
+    width:68.76vw;
+    height: 0.1vh;
+    background: black;
+    float: left;
+}
+.hm_div3 {
+    width: 0.13vw;
+    height: 0.44vh;
+    background: black;
+    float: right;
+    margin-top: -0.44vh;
+
+}
+.header_con{
+    width: 100vw;
+    height: 25.62vh;
+    background:url("../img/8-我的唯美2_02.png");
+    border-top: 0.088vh solid white;
+
+}
+.hcon_id{
+    height: 9.42vh;
+    width: 67.5vw;
+    margin: 0 auto;
+    margin-top: 5.19vh;
+}
+.conid_left{
+    float: left;
+    overflow: hidden;
+}
+.conid_right{
+    float: right;
+    height:9.15vh;
+    width: 44.69vw;
+}
+.conid_right p{
+    width: 44.53vw;
+    height: 3.87vh;
+    border:0.156vw solid white;
+    border-radius: 5vw;
+    line-height: 3.87vh;
+    font-size: 2.4rem;
+    color: white;
+    text-indent: 2rem;
+    margin-top: 1.58vh;
+}
+.conid_right p img{
+    float: right;
+    width: 3.28vw;
+    height: 2.11vh;
+    margin-right: 2.81vw;
+    margin-top: 0.44vh;
+}
+.conid_right a{
+    display: inline-block;
+    text-decoration:none;
+    font-size: 2.4rem;
+    color: white;
+    margin-left: 3.44vw;
+    margin-top:0.9vh;
+}
+.money{
+    height:1.76vh;
+    width: 65.31vw;
+    margin: 0 auto;
+    margin-top: 6.39vh;
+}
+.money p{
+    font-size: 2rem;
+    float: left;
+}
+.mon_remain{
+    float: left;
+    color: #848980;
+}
+.mon_line{
+    height: 6.34vh;
+    width: 0.16vw;
+    background: white;
+    float: left;
+    margin-left: 15.47vw;
+    margin-top: -3vh;
+}
+.mon_discounts{
+    float: right;
+    color: white;
+}
+
+section{
+    height: 57.21vh;
+    background: #eff2ec;
+    border-top: 0.088vh solid #eff2ec;
+}
+.sec_con{
+    width: 80.31vw;
+    height: 35.74vh;
+    margin: 0 auto;
+    margin-top: 5.55vh;
+}
+.scon_con{
+    float: left;
+    margin-left: 9.69vw;
+
+}
+.scon_con p{
+    font-size: 2rem;
+    color: #666666;
+    text-indent:1.7rem;
+    margin-top: 3vh;
+}
+.scon_con img{
+    height: 11vh;
+    width: 19.53vw;
+}
+
+
+.footer{
+    width: 100vw;
+    height: 8.54vh;
+    border-top:0.09vh solid #88d549;
+    position: relative;
+
+}
+.footer div{
+    float: left;
+    margin-left: 8.59vw;
+}
+.footer div p{
+    font-size: 1.8rem;
+    color: #848980;
+    margin-top: 0.62vh;
+}
+.fot_nav{
+    width: 6.25vw;
+    height: 3.52vh;
+    margin-top: 1.32vh;
+}
+.shop{
+    width:16.41vw;
+    height:9.95vh;
+    position: absolute;
+    bottom:2vh;
+    left:79.69vw;
+}

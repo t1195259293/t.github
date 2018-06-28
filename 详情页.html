@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>详情页</title>
+    <link rel="stylesheet" href="css/xiangqingye.css">
+    <script src="js/xiangqingye.js"></script>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/xiangqingye.js"></script>
+</head>
+<body>
+<header>
+    <a href="列表.html"><div class="h_left"><img src="img/3-列表_03.png" alt=""></div></a>
+       <!-- <div class="h_mid">
+            <p  class="hr_p1">水果</p>
+            <img class="hr_img2" src="img/3-列表_03.jpg" alt="">
+            <div>
+                <div class="hm_div1"></div>
+                <div class="hm_div2"></div>
+                <div class="hm_div3"></div>
+            </div>
+        </div>
+        <div class="h_right">
+            <button class="hr_p2"><img src="img/3-列表2_03.png" alt=""></button>
+        </div>
+    </div>-->
+</header>
+<section>
+    <div class="sec_con">
+        <div class="bannerbox">
+            <ul class="banner_ul">
+                <li><a href=""><img class="scon_img" src="img/未标题-1_03 (6).png" alt=""></a></li>
+                <li><a href=""><img class="scon_img" src="img/未标题-1_03 (6).png" alt=""></a></li>
+                <li><a href=""><img class="scon_img" src="img/未标题-1_03 (6).png" alt=""></a></li>
+                <li><a href=""><img class="scon_img" src="img/未标题-1_03 (6).png" alt=""></a></li>
+                <!-- <li><a href=""><img src="images/4-详情页1_02.png" alt=""></a></li>  -->
+            </ul>
+        </div>
+        <div class="con_btn">
+            <ul class="btn_ul">
+                <li class="current btn_li" style=" margin-left:0;"></li>
+                <li class="btn_li"></li>
+                <li class="btn_li"></li>
+            </ul>
+        </div>
+        <img style="width: 6.25vw;height: 3.52vh;float: right;margin-right: 4.84vw" src="img/4-详情页_03.png" alt="">
+
+    </div>
+    <div class="sec_title">
+        <p class="stit_p1">10斤正宗山东特产烟台栖霞红富士苹果</p>
+        <p class="stit_p2">限时促销价：￥68.00</p>
+        <p class="stit_p3">本来价 : <span style="text-decoration: line-through">￥68.00</span></p>
+    </div>
+    <div class="sec_vol">
+        <p>规格 : 1箱</p>
+    </div>
+    <div class="sec_dia">
+        <p>果径 :</p>
+        <span class="change" style="margin-left: 17.81vw">75mm</span><span>80mm以上</span>
+    </div>
+    <p style="font-size: 1.8rem;color:#595f53;margin-left: 37.81vw;margin-top: 4.05vh">上拉图文查看详情</p>
+
+</section>
+<div class="footer">
+    <div class="fot_cut">
+        <img src="img/4-详情页_03 (2).png" alt="">
+    </div>
+    <div class="fot_p1">1</div>
+    <div class="fot_push">
+        <img src="img/4-详情页_05.png" alt="">
+    </div>
+    <a href="我的购物车.html "><div class="fot_p2">加入购物车</div></a>
+    <a href="我的购物车.html"><img class="shop" src="img/2-分类_03 (2).png" alt=""></a>
+</div>
+</body>
+</html>
+<script>
+    $(function () {
+        $(".sec_dia span").click(function () {
+            $(".sec_dia span").removeClass("change");
+            $(this).addClass("change");
+        })
+        /*   var num=0;
+        $(".fot_cut img").click(function () {
+            $(".fot_p1").text(num);
+            num--;
+        })
+        $(".fot_push img").click(function () {
+            $(".fot_p1").text(num);
+            num++;
+        })*/
+
+        //加的效果
+            $(".fot_push img").click(function(){
+                var n=$(".fot_p1").text();
+                var num= parseInt(n)+1;
+                /*  if(num==0)
+                {
+                    return;
+                }*/
+                $(".fot_p1").text(num);
+            });
+            //减的效果
+            $(".fot_cut img").click(function(){
+                var n= $(".fot_p1").text();
+                var num= parseInt(n) - 1;
+                if(num==0)
+                {
+                    return;
+                }
+                $(".fot_p1").text(num);
+            });
+
+        var btn = $(".btn_ul li");//获取小按钮
+        var wimg = $(".banner_ul li").width();//获取图片宽度
+        console.log(wimg);
+//        $(btn[0]).addClass("current");//默认
+        btn.click(function(){
+            //赋class同时清除同类的class
+            $(this).addClass("current").siblings().removeClass("current");
+            var num = $(this).index();//index()不传递参数，返回this的索引值
+            $(".banner_ul").animate({left:-num * wimg + "px"},1000);//动画
+        });
+        var t = setInterval(move,2000);//时间函数
+        function move(){
+            var num;
+            btn.each(function(){ //遍历按钮
+                if($(this).hasClass("current")){
+                    num = $(this).index()+1;//+1 不然返回1
+                    $(".banner_ul").animate({left:-num * wimg + "px"},1000);//动画
+
+                    if(num == btn.length){ //判断
+                        $(".banner_ul").animate({left:"0px"},0);
+                        num=0;
+                    }
+                }
+            });
+            $(btn[num]).addClass("current").siblings().removeClass("current");
+        }
+        })
+
+
+</script>

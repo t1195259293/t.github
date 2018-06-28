@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>订单详情</title>
+    <link rel="stylesheet" href="css/dingdanxiangqing.css">
+    <script src="js/dingdanxiangqing.js"></script>
+    <script src="js/jquery-1.11.3.js"></script>
+</head>
+<body>
+<header>
+    <a href="首页.html"><div class="h_left"><img src="img/6-登录_03 (2).png" alt=""></div></a>
+    <div class="h_mid">
+        <p  class="hr_p1">订单详情</p>
+    </div>
+    <div class="h_right">
+        <button class="hr_p2"></button>
+    </div>
+</header>
+<section>
+    <div class="mess_p">
+        <p>订单信息</p>
+    </div>
+    <div class="sec_message">
+        <div class="smess_num">
+            <p class="mnum_p1">订单编号</p>
+            <p class="mnum_p2"></p>
+            <!--201578797897976788-->
+        </div>
+        <div class="smess_num">
+            <p class="mnum_p1">订单时间</p>
+            <p style="margin-right: 6.92vw" class="mnum_p2">20</p>
+            <!--15.12.21.12:29:20-->
+        </div>
+        <div class="sec_goods">
+            <div class="sgoods_left">
+                <p>收货信息</p>
+                <p>碧江</p>
+                <p>浙江省杭州市拱墅区祥园路120号</p>
+            </div>
+            <div class="sgoods_right">
+                <p>13757686880</p>
+            </div>
+        </div>
+        <div class="smess_num">
+            <p class="mnum_p1">配送方式</p>
+            <p class="mnum_p3"></p>
+        </div>
+        <div class="smess_num">
+            <p class="mnum_p1">支付方式</p>
+            <p class="mnum_p3">微信支付</p>
+        </div>
+        <div style="border: none" class="smess_num">
+            <p class="mnum_p1">订单状态</p>
+            <p class="mnum_p3">待审核</p>
+        </div>
+    </div>
+    <div class="mess_p">
+        <p>价格清单</p>
+    </div>
+    <div class="sec_price">
+        <div class="smess_num">
+            <p class="mnum_p1">商品总价：</p>
+            <span class="mnum_sp4">￥</span><p class="mnum_p4">87</p>
+        </div>
+        <div class="smess_num">
+            <p class="mnum_p1">运费金额：</p>
+            <span class="mnum_sp4">+￥</span><p class="mnum_p4">0</p>
+        </div>
+        <div style="border: none" class="smess_num">
+            <p class="mnum_p1">合计</p>
+            <span style="margin-left: 75.75vw" class="mnum_sp4">￥</span><p class="mnum_p4">87</p>
+        </div>
+    </div>
+    <div class="mess_p">
+        <p>商品清单 <span style="font-weight:normal">(共一件)</span></p>
+    </div>
+    <div class="sec_list">
+        <img src="img/12-订单详情_03.png" alt="">
+        <p class="slist_p1">正宗江西赣南脐橙 新鲜水果橙子
+            甜嫩多汁 5斤包邮</p>
+        <div class="slist_right">
+            <p class="slist_p2">¥ 29.90</p>
+            <p class="slist_p3">×1</p>
+        </div>
+
+    </div>
+    <div class="mess_p">
+        <p>发票</p>
+    </div>
+    <div class="sec_invoice">
+        <p class="mnum_p1">很抱歉，近期我们暂时不能提供发票。</p>
+        <p style="margin-top: 0" class="mnum_p1">请联系400-888-7888申请，我们将尽快为您补寄。</p>
+    </div>
+</section>
+<div class="footer">
+    <p class="footer_p1">商品总价：￥87.00</p>
+    <a href=""><p class="footer_p2">去支付</p></a>
+</div>
+</body>
+</html>
+<script>
+    $(function() {
+        $.ajax({
+            url:"http://192.168.1.177/GIndent/getGIndent/1",//后台发送请求的地址
+            type:"post",
+            dataType:"json",
+            contentType: 'application/x-www-form-urlencoded; charset=UTF-8',
+            success: function (result) {
+                var indentId = result.userInfo.GIndentById.indentId;
+                var indentDate=result.userInfo.GIndentById.indentDate;
+                var delivery=result.userInfo.GIndentById.delivery;
+                var payment=result.userInfo.GIndentById.payment;
+                var indentState=result.userInfo.GIndentById.indentState;
+                var goodsPrice=result.userInfo.GIndentById.goodsPrice;
+                var goodsFreight=result.userInfo.GIndentById.goodsFreight;
+                var goodsTotal=result.userInfo.GIndentById.goodsTotal;
+                $(".mnum_p2").eq(0).text(indentId);
+                $(".mnum_p2").eq(1).text(indentDate);
+                $(".mnum_p3").eq(0).text(delivery);
+                $(".mnum_p3").eq(1).text(payment);
+                $(".mnum_p3").eq(2).text(indentState);
+                $(".mnum_p4").eq(0).text(goodsPrice);
+                $(".mnum_p4").eq(1).text(goodsFreight);
+                $(".mnum_p4").eq(2).text(goodsTotal);
+            }
+        });
+    })
+</script>
+

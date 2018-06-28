@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+/*html { font-size: 62.5%; }  !* =10px *!*/
+html{
+    font-size: 16px;
+}
+header{
+    width: 100vw;
+    height:8.5vh;
+    background: white;
+}
+
+.h_left{
+    float: left;
+
+}
+.h_left img {
+    margin-top:3.61vh;
+    margin-left:5.94vw;
+    width: 2.5vw;
+    height:2.29vh;
+}
+.h_right{
+    float: left;
+    margin-left: 24.69vw;
+}
+.h_mid{
+    float: left;
+}
+.hr_p1{
+    /*float: left;*/
+    font-size: 2.6rem;
+    color: #ccc;
+    margin-top: 3.52vh;
+    margin-left:33.59vw;
+    color:#88d549;
+    display: inline-block;
+    /*margin-right: 36.7vw;*/
+}
+.hr_p2{
+    float: left;
+    border: none;
+    background: none;
+    font-size: 2.2rem;
+    margin-left: -0.69vw;
+    margin-top: 3.52vh;
+    color:#88d549;
+}
+.hr_img1{
+    float: left;
+}
+.hr_img2{
+    width: 2.66vw;
+    height: 1.76vh;
+    float: right;
+    margin-top: 4vh;
+    margin-right: 0.88vw;
+}
+.hm_div1{
+    width:0.13vw;
+    height: 0.44vh;
+    background: black;
+}
+.hm_div2{
+    width:68.76vw;
+    height: 0.1vh;
+    background: black;
+    float: left;
+}
+.hm_div3{
+    width:0.13vw;
+    height: 0.44vh;
+    background: black;
+    float: right;
+    margin-top: -0.44vh;
+}
+section{
+    height:131.69vh;
+    background: #eff2ec;
+}
+.mess_p{
+    height: 7.31vh;
+}
+.mess_p p{
+    font-size: 2.4rem;
+    font-weight: bold;
+    float: left;
+    margin-left: 1.72vw;
+    margin-top: 2.64vh;
+}
+.sec_message{
+    height: 52.55vh;
+    width: 100vw;
+    background: white;
+}
+.smess_num{
+    height: 7.04vh;
+    border-bottom: 0.088vh solid #eff2ec;
+}
+.mnum_p1{
+    float: left;
+    font-size: 2.4rem;
+    color: #666;
+    margin-left: 1.25vw;
+    margin-top: 2.46vh;
+}
+.mnum_p2{
+    float: right;
+    font-size: 2.4rem;
+    color: #666;
+    margin-right: 2.8vw;
+    margin-top: 2.46vh;
+}
+.sec_goods{
+    height: 16.29vh;
+    border-bottom: 0.088vh solid #eff2ec;
+}
+.sgoods_left{
+    float: left;
+}
+.sgoods_left p{
+    font-size: 2.4rem;
+    color: #666;
+    margin-left: 1.25vw;
+    margin-top: 2vh;
+}
+.sgoods_right{
+    float: right;
+
+}
+.sgoods_right p{
+    font-size: 2.4rem;
+    color: #666;
+    margin-right:3.59vw;
+    margin-top:7.22vh;
+}
+.mnum_p3{
+    float: left;
+    font-size: 2.4rem;
+    color: #666;
+    margin-left:4.69vw;
+    margin-top: 2.46vh;
+}
+.mnum_p4{
+    float: left;
+    font-size: 2.4rem;
+    color: #f54d32;
+    margin-top: 2.46vh;
+    margin-left:1.25vw;
+}
+.mnum_sp4{
+    float: left;
+    font-size: 2.4rem;
+    color: #f54d32;
+    margin-left: 64.41vw;
+    margin-top: 2.46vh;
+}
+
+.sec_price{
+    height: 22.62vh;
+    background: white;
+}
+.sec_list{
+    height: 14.88vh;
+    background: white;
+}
+.sec_list img{
+    float: left;
+    height: 8.8vh;
+    width: 15.63vw;
+    margin-top: 3.35vh;
+    margin-left: 1.25vw;
+
+}
+.slist_p1{
+    font-size: 2rem;
+    color: #666;
+    float: left;
+    width: 44.69vw;
+    line-height:2.7vh;
+    margin-top: 3.35vh;
+    margin-left: 2.34vw;
+}
+.slist_right{
+    float: right;
+    height: 6.34vh;
+    margin-right: 5.94vw;
+    margin-top: 4.31vh;
+}
+.slist_p2{
+    font-size: 1.8rem;
+    color: #f54d32;
+
+}
+.slist_p3{
+    font-size: 1.8rem;
+    margin-top:2.46vh;
+}
+.sec_invoice{
+    height: 10.04vh;
+    background: white;
+}
+
+.footer{
+    width: 100vw;
+    height: 8.54vh;
+
+}
+.footer_p1{
+    float: left;
+    font-size: 2.4rem;
+    color: #f54d32;
+    float: left;
+    margin-left: 1.25vw;
+    margin-top: 2.99vh;
+}
+.footer_p2{
+    float: right;
+    width: 20.47vw;
+    height: 3.87vh;
+    background:#f54d32;
+    border: none;
+    font-size: 2.4rem;
+    color: white;
+    text-align: center;
+    line-height: 3.87vh;
+    margin-top: 2.11vh;
+    margin-right: 1.25vw;
+    border-radius: 1vw;
+}

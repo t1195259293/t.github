@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+/*html { font-size: 62.5%; }  !* =10px *!*/
+html{
+    font-size: 16px;
+}
+header{
+    width: 100vw;
+    height:8.5vh;
+    background: white;
+}
+
+.h_left{
+    float: left;
+
+}
+.h_left img {
+    margin-top:3.61vh;
+    margin-left:5.94vw;
+    width: 2.5vw;
+    height:2.29vh;
+}
+.h_right{
+    float: left;
+    margin-left: 24.69vw;
+}
+.h_mid{
+    float: left;
+}
+.hr_p1{
+    /*float: left;*/
+    font-size: 2.6rem;
+    color: #ccc;
+    margin-top: 3.52vh;
+    margin-left:33.59vw;
+    color:#88d549;
+    display: inline-block;
+    /*margin-right: 36.7vw;*/
+}
+.hr_p2{
+    float: left;
+    border: none;
+    background: none;
+    font-size: 2.2rem;
+    margin-left: -0.69vw;
+    margin-top: 3.52vh;
+    color:#88d549;
+}
+.hr_img1{
+    float: left;
+}
+.hr_img2{
+    width: 2.66vw;
+    height: 1.76vh;
+    float: right;
+    margin-top: 4vh;
+    margin-right: 0.88vw;
+}
+.hm_div1{
+    width:0.13vw;
+    height: 0.44vh;
+    background: black;
+}
+.hm_div2{
+    width:68.76vw;
+    height: 0.1vh;
+    background: black;
+    float: left;
+}
+.hm_div3{
+    width:0.13vw;
+    height: 0.44vh;
+    background: black;
+    float: right;
+    margin-top: -0.44vh;
+}
+section{
+    height: 91.5vh;
+    width: 100vw;
+    background: #eff2ec;
+    border-top:0.088vh solid #eff2ec ;
+}
+.sec_con{
+    width: 97.5vw;
+    height: 38.47vh;
+    background: white;
+    border-radius: 2vw;
+    margin-top: 1.14vh;
+    margin-left: 1.25vw;
+}
+.sec_default{
+    height: 6.87vh;
+    width: 97.5vw;
+}
+.sec_default img{
+    height: 3.87vh;
+    width: 6.875vw;
+    float: left;
+    margin-left: 2.97vw;
+    margin-top: 1.67vh;
+}
+.sec_default p{
+    font-size: 2.4rem;
+    font-weight: bold;
+    float: left;
+    margin-top: 2.2vh;
+    margin-left: 3.75vw;
+}
+.sec_add{
+    height: 5.99vh;
+    width: 97.5vw;
+    border-top: 0.088vh solid #eff2ec;
+   line-height: 5.99vh;
+}
+.sadd_p{
+    margin-left: 7.03vw;
+    font-size: 2.4rem;
+    color: #666;
+}
+.sec_add img{
+    float: right;
+    width: 2.5vw;
+    height: 2.29vh;
+    margin-top: 2.02vh;
+    margin-right: 5vw;
+}

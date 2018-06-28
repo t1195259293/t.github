@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>手机注册</title>
+    <link rel="stylesheet" href="css/shoujizhuce.css">
+    <script src="js/shoujizhuce.js"></script>
+    <script src="js/jquery-1.11.3.js"></script>
+</head>
+<body>
+<header>
+    <a href="登陆.html"><div class="h_left"><img src="img/6-登录_03 (2).png" alt=""></div></a>
+    <div class="h_mid">
+        <p  class="hr_p1">手机注册</p>
+    </div>
+    <div class="h_right">
+        <button class="hr_p2">下一步</button>
+    </div>
+</header>
+<section>
+    <div class="sec_message">
+        <div class="smess_number">
+            <img src="img/6-登录_01_03.png" alt="">
+            <div class="snum_number"><input type="text" placeholder="请输入手机号"></div>
+        </div>
+        <div class="smess_number">
+            <img src="img/7-手机注册_06.jpg" alt="">
+            <div class="snum_number"><input type="text" placeholder="输入验证码"></div>
+            <p class="snum_cap">获取验证码</p>
+        </div>
+        <div class="smess_number">
+            <img src="img/7-手机注册_09.jpg" alt="">
+            <div class="snum_number"><input type="password" placeholder="设置密码6-10位"></div>
+        </div>
+        <div class="smess_agreement">
+            <div class="sagree_div"></div>
+            <img  src="img/7-手机注册_12.png" alt="">
+            <div class="sagree_con">
+                <p>我已阅读并接受<a href="">唯美原品服务协议</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="submit">
+        <input type="button" value="注册">
+    </div>
+</section>
+</body>
+</html>
+<script>
+    $(".sagree_div").click(function () {
+        $(this).attr("style","display:none");
+        $(this).next().attr("style","display:block");
+    })
+    $(".smess_agreement img").click(function () {
+        $(this).attr("style","display:none");
+        $(this).prev().attr("style","display:block");
+    })
+</script>

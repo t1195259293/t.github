@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header{
+    width:100vw;
+    height: 8.54vh;
+    background: white;
+}
+
+.h_left{
+    float: left;
+    width:15.62vw ;
+    height:8.8vh ;
+}
+.h_left img {
+    margin-top:3.61vh;
+    margin-left:5.94vw;
+    width: 2.5vw;
+    height:2.29vh;
+}
+.h_right{
+    float: left;
+    width:15.62vw ;
+    height:8.8vh ;
+}
+.h_mid{
+    float: left;
+    width:65vw;
+    height: 7.3vh;
+}
+
+.hr_p2{
+    float: left;
+    border: none;
+    background: none;
+    font-size: 2rem;
+    margin-left: -0.69vw;
+    margin-top: 3.52vh;
+    color:#88d549;
+}
+.hr_img1{
+    float: left;
+}
+.hr_img2{
+    width: 2.66vw;
+    height: 1.76vh;
+    float: right;
+    margin-top: 4vh;
+    margin-right: 0.88vw;
+}
+.hm_div1{
+    width:0.13vw;
+    height: 0.44vh;
+    background: black;
+}
+.hm_div2{
+    width:68.76vw;
+    height: 0.1vh;
+    background: black;
+    float: left;
+}
+.hm_div3{
+    width:0.13vw;
+    height: 0.44vh;
+    background: black;
+    float: right;
+    margin-top: -0.44vh;
+}
+
+section{
+    height: 74.82vh;
+    width: 100vw;
+    background: #eff2ec;
+    border-top:0.088vh solid #eff2ec;
+    border-bottom:0.088vh dashed #88d549;
+    /*border-width:2.5rem;*/
+}
+.sec_message{
+    width: 85.31vw;
+    height: 21.21vh;
+    border-radius: 2vw;
+    background: white;
+    margin-left: 7.34vw;
+    margin-top: 4.23vh;
+    overflow: hidden;
+}
+.sec_enter{
+    height: 3.79vh;
+    width: 72.03vw;
+    margin-left: 5.94vw;
+    margin-top: 4.58vh;
+}
+.sec_enter img{
+    height: 2.64vh;
+    width: 4.69vw;
+    float: left;
+
+}
+.senter_user{
+    width: 65.63vw;
+    height: 3.79vh;
+    border-bottom:0.088vh solid #ccc;
+    float: left;
+    margin-left:1.63vw;
+
+}
+.senter_user input{
+    border: none;
+    text-indent: 2rem;
+    font-size: 1.8rem;
+    width: 65.63vw;
+    height: 3.79vh;
+}
+.senter_user input::-webkit-input-placeholder{
+    color: #adadad;
+}
+.sec_password{
+    height: 3.79vh;
+    width: 72.03vw;
+    margin-left: 5.94vw;
+    margin-top:3.52vh;
+}
+.sec_password img{
+    height: 2.64vh;
+    width: 4.69vw;
+    float: left;
+}
+.spassword_pass{
+    width: 65.63vw;
+    height: 3.79vh;
+    border-bottom:0.088vh solid #ccc;
+    float: left;
+    margin-left:1.63vw;
+
+}
+.spassword_pass input{
+    border: none;
+    text-indent: 2rem;
+    font-size: 1.8rem;
+    width: 65.63vw;
+    height: 3.79vh;
+}
+.spassword_pass input::-webkit-input-placeholder{
+
+    color: #adadad;
+}
+.sec_p1{
+    font-size: 1.8rem;
+    color: #88d549;
+    float: right;
+    margin-right: 7.5vw;
+    margin-top: 2.38vh;
+}
+.sec_record{
+    width: 85.31vw;
+    height:5.46vh;
+    background:  #f54d32;
+    border-radius:1vw;
+    margin-left:7.34vw;
+    text-align: center;
+    line-height: 5.46vh;
+    font-size:2.4rem;
+    color: white;
+    border: none;
+    margin-top: 27.11vh;
+}
+.footer{
+    height: 16.55vh;
+    width: 100vw;
+    background: #eff2ec;
+}
